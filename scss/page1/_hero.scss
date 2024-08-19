@@ -1,0 +1,79 @@
+.hero{
+    padding-top: 108px;
+    padding-bottom: 108px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url('../img/hero-bg-wave-phone.svg');
+}
+.hero__title{
+    margin-bottom: 31px;
+    color: $orange;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.83px;
+}
+.hero__desc{
+    margin-bottom: 28px;
+    color: $black;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 52.77px;
+}
+.hero__text{
+    margin-bottom: 35px;
+    color: $black;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.hero__link{
+    @include buttons;
+    border-radius: 55px;
+    background: $orange-buttons;
+}
+.hero__illustration{
+    display: none;  
+}
+
+@media screen and (min-width: 768px) {
+    .hero{
+        background-image: url('../img/hero-bg-wave.svg');
+    }
+    .hero__content{
+        width: 276px;
+    }
+    .hero-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero__illustration{
+        max-width: 345px;
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) {
+    .hero__content{
+        width: 527px;
+    }
+    .hero__title{
+        margin-bottom: 17px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 31.04px;
+    }
+    .hero__desc{
+        margin-bottom: 26px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 77.6px;
+    }
+    .hero__text{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+    .hero__illustration{
+        max-width: 675px;
+    }
+}
